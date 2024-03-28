@@ -1,5 +1,6 @@
 # Q-1
-# Consider available dataset: mtcars establish the relationship between "mpg"    as a response variable with "disp","hp" and "wt" as predictor variables.       Create Equation for Regression Model
+# Consider available dataset: mtcars establish the relationship between "mpg" as a response variable with "disp","hp" and "wt" as predictor variables. 
+# Create Equation for Regression Model
 # Y = a+Xdisp.x1+Xhp.x2+Xwt.x3
 # Apply Equation for predicting New Values for a car with disp = 221, hp = 102   and wt = 2.91 the predicte mileage.
 
@@ -115,7 +116,7 @@ plot(mpg, wt, xlab='Mileage', ylab = "Weight", col='red', abline(lm(wt~mpg), col
 # Q-5
 # Calculate five number summary or five point summary of given vector
 # rebounds=c(30, 28, 24, 24, 28, 30, 31, 35,28)
-# Calculate mean, median and mode for same data. Also use trim and na.rm parameter   for mean.
+# Calculate mean, median and mode for same data. Also use trim and na.rm parameter for mean.
 
 rebounds = c(30, 28, 24, 24, 28, 30, 31, 35,28)
 rebounds
@@ -139,7 +140,7 @@ d
 #  X = (27,23,45,49,78,67,56,54,35,39,69,87,88,93,NA)
 # 1. Calculate median for the given data.
 # 2. Calculate mode of the vector.
-# 3. Calculate the mean of the data by skipping the minimum and maximum value of a      vector.
+# 3. Calculate the mean of the data by skipping the minimum and maximum value of a vector.
 # 4. Sort the data and find the minimum and maximum values of a given a vector.
 # 5. Find minimum and maximum value using inbuilt functions.
 # 6. Calculate mean of the entire vector. (Ignore NA values)
