@@ -1,8 +1,8 @@
-# Q-1
+# Question : 1
 # Consider available dataset: mtcars establish the relationship between "mpg" as a response variable with "disp","hp" and "wt" as predictor variables. 
 # Create Equation for Regression Model
 # Y = a+Xdisp.x1+Xhp.x2+Xwt.x3
-# Apply Equation for predicting New Values for a car with disp = 221, hp = 102   and wt = 2.91 the predicte mileage.
+# Apply Equation for predicting New Values for a car with disp = 221, hp = 102 and wt = 2.91 the predicte mileage.
 
 df <- View(mtcars)
 df
@@ -28,7 +28,7 @@ Xwt
 y = Xall + Xdisp*221 + Xhp*102 + Xwt*2.91
 y
 
-# Q-1
+# Question : 2
 # Consider following vectors for multiple linear regression model:
 # year <- c(2017,2017,2017,2017,2017,2017,2017,2017,2017,2017,2017,2017,2016,2016,2016,2016,2016,2016,2016,2016,2016,2016,2016,2016)
 # month <- c(12,11,10,9,8,7,6,5,4,3,2,1,12,11,10,9,8,7,6,5,4,3,2,1)
@@ -77,7 +77,7 @@ y = Xall + Xinterest*2.4 + Xunemployment*5.4
 y
 
 
-# Q-3
+# Question : 3
 # Calculate Pearson correlation coefficient for given data:
 # v1 = c(1, 2, 3, 4, 5, 6, 7) v2 = c(1, 3, 6, 2, 7, 4, 5)
 # Plot relationship and perform analysis on type.
@@ -94,7 +94,7 @@ result
 plot(v1, v2, xlab='V1',ylab = "V2", col='red', abline(lm(v2~v1),col="blue"))
 
 
-# Q-4
+# Question : 4
 # Use avaliable dataset in R: mtcars
 # Calculate Correlation coefficient for mgp and wt. Plot relationship and perform analysis on type.
 
@@ -113,7 +113,7 @@ result
 plot(mpg, wt, xlab='Mileage', ylab = "Weight", col='red', abline(lm(wt~mpg), col="blue"))
 
 
-# Q-5
+# Question : 5
 # Calculate five number summary or five point summary of given vector
 # rebounds=c(30, 28, 24, 24, 28, 30, 31, 35,28)
 # Calculate mean, median and mode for same data. Also use trim and na.rm parameter for mean.
@@ -135,7 +135,7 @@ c
 d <- names(sort(table(rebounds),decreasing = TRUE))[1]
 d
 
-# Q-6
+# Question : 6
 # Generate a vector from the given data. Calculate the following:
 #  X = (27,23,45,49,78,67,56,54,35,39,69,87,88,93,NA)
 # 1. Calculate median for the given data.
