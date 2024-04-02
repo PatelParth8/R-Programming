@@ -26,6 +26,7 @@ print(df[,c(1,3,5)])
 
 #6 Display only Number of cylinders, Weight and Gear details from dataset.
 print(sapply(df[c(2, 6, 10)], sum))
+print(sapply(df[,c('cyl', 'wt', 'gear')], sum))
 
 #7 Calculate sum of all columns and display total of each.
 print(sapply(df, sum))
