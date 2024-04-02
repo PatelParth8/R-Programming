@@ -24,7 +24,8 @@ print(a)
 
 #Que :- 5 Add a new column in a given data frame. (country)
 country <- c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")
-exam <- data.frame(exam, country)
+#exam <- data.frame(exam, country)
+exam <- cbind(exam, country)
 print(exam)
 
 #STUDENT DATA
@@ -43,7 +44,8 @@ print(student)
 
 #Que :- 3 Expand data frame with the new vector Hobby.
 hobby <- c("Reading", "Writing", "Cricket", "Volleyball", "Football")
-student <- data.frame(student, hobby)
+#student <- data.frame(student, hobby)
+student <- cbind(student, hobby)
 print(student)
 
 #Que :- 4 Display only student name and salary.
@@ -52,6 +54,7 @@ student <- data.frame(student, salary)
 print(student)
 
 print(student[,c(2,5)])
+print(student[,c('name', 'salary')])
 
 #Que :- 5 Display only 2nd and 4th row and 2nd and 4th column from student detail data frame.
 student <- student[c(2,4),c(2,4)]
