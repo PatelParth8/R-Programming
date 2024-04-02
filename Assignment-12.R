@@ -79,6 +79,7 @@ Marks <- c(89, 89, 76, 89, 90, 67)
 df <- data.frame(Subjects, Marks)
 df
 
+print(aggregate(df$Marks, list(df$Subjects), sum))
 
 # Question : 5
 # Generate the following data frame and perform the following functions:
