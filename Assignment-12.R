@@ -19,7 +19,10 @@ CarDetails
 CarModel <- c("X3", "Q8", "AMG", "XC90", "URUS")
 CarModel
 
-CarDetails <- list(CarDetails, "CarModel"=CarModel)
+CarModelList <- list("CarModel"=CarModel)
+CarModelList
+
+CarDetails <- c(CarDetails, CarModelList)
 CarDetails
 
 # Question : 2
