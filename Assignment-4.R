@@ -11,8 +11,11 @@ exam <- data.frame(name, score, attempts, qualify)
 print(exam)
 
 #Que :- 2 Extract name column from a data frame.
-name <- data.frame(name)
-print(name)
+#name <- data.frame(name)
+#print(name)
+
+name <- exam[,c('name')]
+name
 
 #Que :- 3 Extract first two rows from a given data frame.
 row <- exam[c(1,2),]
