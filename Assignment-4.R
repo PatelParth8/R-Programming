@@ -53,7 +53,8 @@ print(student)
 
 #Que :- 4 Display only student name and salary.
 salary <- c("10000", "30000", "50000", "15000", "25000")
-student <- data.frame(student, salary)
+#student <- data.frame(student, salary)
+student <- cbind(student, salary)
 print(student)
 
 print(student[,c(2,5)])
