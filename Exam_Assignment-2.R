@@ -1,5 +1,7 @@
 #SET 1
 # 1
+# Create the dataframe and generate a chart from the given specification.
+# # Generate a Histogram chart for the above data. The chart should include title for the chart, legend of chart. Each Bar of chart should be in Yellow color. Give Red color to border of the chart. The data on X-axis must be between 60 to 100.
 
 Selling_of_Machines <- c(45,95,105,75,85,80,90,65,110,100)
 City <- c("Bhavnagar", "Ahmedabad", "Pune", "Bengaluru", "Chennai", "Mumbai", "Mathura", "Vadodara", "Delhi", "Shimla")
@@ -12,6 +14,9 @@ legend(x = "topright", legend = "Selling of Machines", fill = "yellow")
 
 
 # 2
+# Attempt the following:
+# Perform Z-score for the following vector and document the conclusion.
+# V (14,76,56,34,23,89,78,10)
 
 v <- c(14,76,56,34,23,89,78,10)
 print(v)
@@ -24,6 +29,13 @@ print(z)
 print(scale(v, scale = TRUE, center = TRUE))
 
 # 3
+# Consider the vector: (12,13,15,17,16,19,20,23,25,27,29,31, NA)
+# Perform the following operations:
+#  1. Calculate mean, median and mode.
+#  2. Multiply each element by 2.
+#  3. Find the length of the vector.
+#  4. Add 45 to the above vector and display.
+#  5. Sort the above vector in decreasing order. Increment each element of vector by 5
 
 v1 <- c(12,13,15,17,16,19,20,23,25,27,29,31,NA)
 print(v1)
@@ -52,6 +64,9 @@ print(v1)
 print(sort(v1 + 5, decreasing = TRUE))
 
 # 4
+# Without assuming the data to have normal distribution, decide at .05 significance level if
+# the gas mileage data of manual and automatic transmissions in mtcars have identical data
+# distribution. Apply Mann-Whitney-Wilcoxon Test. Consider p-value for documenting your analysis.
 
 data <- wilcox.test(mpg ~ am, data = mtcars)
 print(data$p.value)
@@ -59,6 +74,9 @@ print(data$p.value)
 # SET : 2
 
 # 1
+# Create the dataframe and generate a chart from the given specification.
+# Generate separate Box Plot charts for the above data. Document your analysis accordingly.
+
 Selling_of_LEDs <- c(69,93,110,65,75,80,97,43,55)
 Selling_of_LCDs <- c(61,78,100,53,69,80,79,39,48)
 
@@ -69,6 +87,10 @@ boxplot(df$Selling_of_LEDs, df$Selling_of_LCDs, main = "Box Plot", col = c("blue
 legend(x = "topright", legend = c("Selling_of_LEDs", "Selling_of_LCDs"), fill = c("blue", "yellow"))
 
 # 2
+# Perform T-test for the following vector and document the conclusion.
+#  V1 (124,176,116,134,219,189,178,310)
+#  V2 (110,120,180,200,160,155,168,210)
+
 V1 <- c(124,176,116,134,219,189,178,310)
 V2 <- c(110,120,180,200,160,155,168,210)
 
@@ -77,6 +99,14 @@ t.test(V1, V2, var.equal = TRUE)
 t.test(V1, V2, paired = TRUE)
 
 # 3
+# Consider the vector: (112,139,195,172,162,119,2202,23,225,217,219,131, NA)
+# Perform the following operations:
+#  1. Calculate mean, median and mode.
+#  2. Find maximum and minimum from the above vector.
+#  3. Find the length of the vector.
+#  4. Add 345 to the above vector and display.
+#  5. Sort the above vector in decreasing order. Increment each element of vector by 5
+
 v <- c(112,139,195,172,162,119,2202,23,225,217,219,131,NA)
 
 mean <- mean(v, na.rm = TRUE)
@@ -106,7 +136,9 @@ print(v)
 print(sort(v + 5, decreasing = TRUE))
 
 
-# 3
+# 4. Find the correlation coefficient of mpg and wt in the data set mtcars.
+# Observe if there is any linear relationship between the variables.
+
 mileage <- mtcars$mpg
 print(mileage)
 
@@ -126,6 +158,11 @@ legend(x = "topright", legend = c("Mileage", "Weight"), fill = c("blue"))
 # SET : 3
 
 # 1
+# Create the dataframe and generate a chart from the given specification.
+# Generate a scatter plot for the above data. Insert a line into scatter plot to indicate slope.
+# The points in the scatter plot should be shown with filled red circle with yellow boundary. The
+# chart should have the title of the chart. Give proper labels to X-axis and Y-axis.
+
 Height <- c(165,169,168,159,175,180,186)
 print(Height)
 
@@ -138,6 +175,9 @@ print(df)
 plot(df$Height, df$Weight, main = "Scatter Plot", xlab = "Height", ylab = "Weight", abline(lm(Weight~Height)), col = "red", cex = 1.5, pch = 20)
 
 # 2
+# Perform ANOVA Analysis for the following vector and document the conclusion.
+# Use mtcars dataset and mpg as response variable, hp and am column for performing analysis.
+
 input <- mtcars[,c('mpg', 'hp', 'am')]
 print(input)
 
@@ -148,6 +188,14 @@ b <- aov(mpg ~ hp + am, data = mtcars)
 print(summary(b))
 
 # 3
+# Consider the vector: (11,13,15,12,14,19,22,23,25,21,29,31, NA)
+# Perform the following operations:
+#  1. Calculate mean, median and mode.
+#  2. Multiple each element by 3.
+#  3. Find the length of the vector.
+#  4. Add 345 to the above vector and display.
+#  5. Sort the above vector in decreasing order. Increment each element of vector by 5
+
 v <- c(11,13,15,12,14,19,22,23,25,21,29,31,NA)
 print(v)
 
@@ -175,6 +223,8 @@ print(v)
 print(sort(v + 5, decreasing = TRUE))
 
 # 4
+# Create the inbuilt dataset mtcars. Consider mpg as response variable and disp, hp & wt as a predicator variable. Create multiple regression model and print the summary.
+
 input <- mtcars[,c('mpg', 'disp', 'hp', 'wt')]
 print(input)
 
